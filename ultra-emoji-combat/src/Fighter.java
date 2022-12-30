@@ -10,6 +10,7 @@ public class Fighter {
     private int tied;
 
     public void apresentation(){
+        System.out.println("---------------------------------------------");
         System.out.println("This is " + this.getName());
         System.out.println("from " + this.getNacionality());
         System.out.println("aged " + this.getAge());
@@ -19,9 +20,11 @@ public class Fighter {
         System.out.println("and");
         System.out.println(this.getTied() + " tieds");
         System.out.println("draws competing in the " + this.getCategory() + " division");
+        System.out.println("--------------------------------------------------");
     }
 
     public void status(){
+        System.out.println("-----------------------------------");
         System.out.println("name: "+ getName());
         System.out.println("from: "+ getNacionality());
         System.out.println("aged: "+ getAge());
@@ -31,6 +34,7 @@ public class Fighter {
         System.out.println("wind: " + this.getWins());
         System.out.println("lose: " + this.getDefeats());
         System.out.println("tied: " + this.getTied());
+        System.out.println("-----------------------------------");
 
     }
     public void winFight(){
@@ -80,10 +84,10 @@ public class Fighter {
     }
 
     public void setCategory() {
-        if (this.weight < 52.2) this.category = "invalid";
-            else if(this.weight <= 70.3 ) this.category = "light";
+        if(this.weight <= 70.3 ) this.category = "light";
         else if (this.weight <= 83.9) this.category = "avarege";
         else if (this.weight <= 120.2) this.category = "heavy";
+        else this.category = "invalid";
     }
 
     public void setWins(int wins) {
