@@ -41,28 +41,26 @@ public class Fight {
             this.brave.apresentation();
             this.defiant.apresentation();
 
-              int randomWins = (int)(Math.random() * 3);
+            int randomWins = (int)(Math.random() * 3);
 
+            System.out.println("----------------Fight------------------");
             switch (randomWins){
                 case 0:
-                    this.brave.drawFight();
-                    System.out.println(brave.getName() + " draw fight");
-                    this.defiant.drawFight();
-                    System.out.println(defiant.getName() + " draw fight");
+                    this.brave.tiedFight();
+                    this.defiant.tiedFight();
+                    System.out.println("the fight tied");
                     break;
 
                 case 1:
                     this.brave.loseFight();
-                    System.out.println(brave.getName() + " lose fight");
                     this.defiant.winFight();
-                    System.out.println(defiant.getName() + " wins fight");
+                    System.out.println(defiant.getName() + " win fight");
                     break;
 
                 case 2:
                     this.defiant.loseFight();
-                    System.out.println(defiant.getName() + " lose fight");
                     this.brave.winFight();
-                    System.out.println(brave.getName() + " wins fight");
+                    System.out.println(brave.getName() + " win fight");
                     break;
             }
         }

@@ -19,17 +19,8 @@ public class Main {
 
         var fight = new Fight();
         fight.brandFight(lutador[0], lutador[1]);
-        fight.fight();
 
-        System.out.println("-----------------------");
-        System.out.println(lutador[0].getWins());
-        System.out.println(lutador[0].getTied());
-        System.out.println(lutador[0].getDefeats());
-        System.out.println("-----------------------");
-        System.out.println(lutador[1].getWins());
-        System.out.println(lutador[1].getTied());
-        System.out.println(lutador[1].getDefeats());
-        System.out.println("-----------------------");
+        fight.fight();
 
     }
 }
