@@ -20,11 +20,14 @@ public class Fight {
     public Fighter getDefiant() {
         return defiant;
     }
+
+
     public void brandFight(Fighter fighter1, Fighter fighter2){
-       if (fighter1.getCategory() == fighter2.getCategory()) {
+       if (fighter1.getCategory().equals(fighter2.getCategory()) && fighter1 != fighter2) {
            setBrave(fighter1);
            setDefiant(fighter2);
-           if (brave != defiant) approved = true;
+           approved = true;
+       }
            else {
                approved = false;
                brave = null;
@@ -33,16 +36,14 @@ public class Fight {
 
        }
 
-    }
-
     public void fight(){
-        if (approved){
+        if (this.approved){
             this.brave.apresentation();
             this.defiant.apresentation();
 
-            int wins = (int)(Math.random() * 3);
+              int randomWins = (int)(Math.random() * 3);
 
-            switch (wins){
+            switch (randomWins){
                 case 0:
                     this.brave.drawFight();
                     System.out.println(brave.getName() + " draw fight");
