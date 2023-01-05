@@ -6,11 +6,4 @@ public interface IBook {
     public void backPage();
 
 
-
-
-
-
-
-
-
 }
