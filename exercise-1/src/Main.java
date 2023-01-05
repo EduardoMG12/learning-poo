@@ -15,11 +15,15 @@ public class Main {
         b[1] = new Book("Clean Code","Geraldo Script",258,p[1]);
         b[2] = new Book("algorithm","Roberto Dioves",552,p[2]);
 
-        b[0].details();
-
-        b[0].getOpen();
-        System.out.println("--------------------------");
         b[0].leafThrough(115);
+        System.out.println(b[0].details());
+        System.out.println("--------------------------");
+        b[0].open();
+        System.out.println("--------------------------");
+        System.out.println(b[0].details());
+        b[0].leafThrough(115);
+        System.out.println("--------------------------");
+        System.out.println(b[0].details());
         System.out.println("--------------------------");
         b[0].nextPage();
         System.out.println("--------------------------");
@@ -27,8 +31,26 @@ public class Main {
         System.out.println("--------------------------");
         b[0].backPage();
         System.out.println("--------------------------");
-        b[0].getAuthor();
+        System.out.println(b[0].getAuthor());
         System.out.println("--------------------------");
-        b[0].details();
+        System.out.println(b[0].details());
+
+        System.out.println(b[1].details());
+        System.out.println("--------------------------");
+        b[1].open();
+        System.out.println(b[1].details());
+        b[1].leafThrough(115);
+        System.out.println("--------------------------");
+        System.out.println(b[1].details());
+        System.out.println("--------------------------");
+        b[1].nextPage();
+        System.out.println("--------------------------");
+        b[1].nextPage();
+        System.out.println("--------------------------");
+        b[1].backPage();
+        System.out.println("--------------------------");
+        System.out.println(b[1].getAuthor());
+        System.out.println("--------------------------");
+        System.out.println(b[1].details());
     }
 }
