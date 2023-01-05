@@ -1,56 +1,56 @@
 public class Main {
     public static void main(String[] args) {
-        var p = new Person[6];
+        var person = new Person[6];
 
-        p[0] = new Person("Livia",20,'F');
-        p[1] = new Person("Jeremias",35,'M');
-        p[2] = new Person("Thiago",42,'M');
-        p[3] = new Person("Arlinda",35,'F');
-        p[4] = new Person("Roberto",44,'M');
-        p[5] = new Person("Eduarda",18,'F');
+        person[0] = new Person("Livia",20,'F');
+        person[1] = new Person("Jeremias",35,'M');
+        person[2] = new Person("Thiago",42,'M');
+        person[3] = new Person("Arlinda",35,'F');
+        person[4] = new Person("Roberto",44,'M');
+        person[5] = new Person("Eduarda",18,'F');
 
-        var b = new Book[3];
+        var book = new Book[3];
 
-        b[0] = new Book("Design Pattern","Angelica Kubernetes",355,p[0]);
-        b[1] = new Book("Clean Code","Geraldo Script",258,p[1]);
-        b[2] = new Book("algorithm","Roberto Dioves",552,p[2]);
+        book[0] = new Book("Design Pattern","Angelica Kubernetes",355,person[0]);
+        book[1] = new Book("Clean Code","Geraldo Script",258,person[1]);
+        book[2] = new Book("algorithm","Roberto Dioves",552,person[2]);
 
-        b[0].leafThrough(115);
-        System.out.println(b[0].details());
+        book[0].leafThrough(115);
+        System.out.println(book[0].details());
         System.out.println("--------------------------");
-        b[0].open();
+        book[0].open();
         System.out.println("--------------------------");
-        System.out.println(b[0].details());
-        b[0].leafThrough(115);
+        System.out.println(book[0].details());
+        book[0].leafThrough(115);
         System.out.println("--------------------------");
-        System.out.println(b[0].details());
+        System.out.println(book[0].details());
         System.out.println("--------------------------");
-        b[0].nextPage();
+        book[0].nextPage();
         System.out.println("--------------------------");
-        b[0].nextPage();
+        book[0].nextPage();
         System.out.println("--------------------------");
-        b[0].backPage();
+        book[0].backPage();
         System.out.println("--------------------------");
-        System.out.println(b[0].getAuthor());
+        System.out.println(book[0].getAuthor());
         System.out.println("--------------------------");
-        System.out.println(b[0].details());
+        System.out.println(book[0].details());
 
-        System.out.println(b[1].details());
+        System.out.println(book[1].details());
         System.out.println("--------------------------");
-        b[1].open();
-        System.out.println(b[1].details());
-        b[1].leafThrough(115);
+        book[1].open();
+        System.out.println(book[1].details());
+        book[1].leafThrough(115);
         System.out.println("--------------------------");
-        System.out.println(b[1].details());
+        System.out.println(book[1].details());
         System.out.println("--------------------------");
-        b[1].nextPage();
+        book[1].nextPage();
         System.out.println("--------------------------");
-        b[1].nextPage();
+        book[1].nextPage();
         System.out.println("--------------------------");
-        b[1].backPage();
+        book[1].backPage();
         System.out.println("--------------------------");
-        System.out.println(b[1].getAuthor());
+        System.out.println(book[1].getAuthor());
         System.out.println("--------------------------");
-        System.out.println(b[1].details());
+        System.out.println(book[1].details());
     }
 }
