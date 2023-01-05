@@ -55,12 +55,12 @@ public class Book implements IBook {
                 ", totalPage=" + totalPage +
                 ", currentPage=" + currentPage +
                 ", open=" + open +
-                ", reader=" + reader +
+                ", reader=" + reader.getName() +
                 '}';
     }
 
     @Override
-    public void opening() {
+    public void open() {
         if(this.open == false){
             this.open = true;
             System.out.println("[open book]");
@@ -68,7 +68,7 @@ public class Book implements IBook {
     }
 
     @Override
-    public void closing() {
+    public void close() {
         if(getOpen()){
             this.open = false;
             System.out.println("[close book]");
@@ -77,20 +77,29 @@ public class Book implements IBook {
 
     @Override
     public void leafThrough(int p) {
+        if (p > getTotalPage() || getOpen() == false);
+        else {
             this.currentPage = p;
             System.out.println(this.currentPage);
+        }
     }
 
     @Override
     public void nextPage() {
+        if (currentPage+1 > getTotalPage() || getOpen() == false);
+        else {
             this.currentPage++;
             System.out.println(this.currentPage);
+        }
     }
 
     @Override
     public void backPage() {
+        if (currentPage-1 <= 0 || getOpen() == false);
+        else {
             this.currentPage--;
             System.out.println(this.currentPage);
+        }
     }
 
     public Book(String title, String author, int totalPage, Person reader) {
