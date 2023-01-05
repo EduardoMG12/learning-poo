@@ -17,9 +17,8 @@ IDE: IntelliJ
 ## Progresso
 Atualmente, tenho realizado os seguintes tópicos:
 
-Tópico 1
-Tópico 2
-Tópico 3
+projectBook
+Tópico ultra-emoji-combat
 
 ## Como contribuir
 Se você deseja contribuir para este repositório, sinta-se à vontade para:
