@@ -1,24 +1,24 @@
-# Nome do Repositório
+# learningoOOP
 Este repositório contém os meus estudos e exercícios de programação orientada a objeto, utilizando linguagem X.
 
 ## Conteúdo
 Neste repositório você encontrará:
 
-- Códigos fontes dos exercícios realizados
-- Diagramas de classes
-- Anotações e resumos teóricos
+- Códigos fontes dos exercícios realizados.
+- Diagramas de classes.
+- Anotações e resumos teóricos.
 - 
 ## Recursos
 Para realizar os exercícios e estudos neste repositório, utilizei as seguintes ferramentas:
 
-Linguagem de programação: Java
-IDE: IntelliJ
+Linguagem de programação: Java.
+IDE: IntelliJ.
 
 ## Progresso
 Atualmente, tenho realizado os seguintes tópicos:
 
-projectBook
-Tópico ultra-emoji-combat
+- projectBook
+- Tópico ultra-emoji-combat
 
 ## Como contribuir
 Se você deseja contribuir para este repositório, sinta-se à vontade para:
