@@ -28,7 +28,11 @@ public class Person {
     }
 
     public void haveBirthday(){
-
-
+        setYears(getYears() + 1);
+    }
+    public Person(String name, int years, char sex) {
+        this.name = name;
+        this.years = years;
+        this.sex = sex;
     }
 }
