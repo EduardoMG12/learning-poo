@@ -1,6 +1,10 @@
 public class Mammals extends Animal{
 private String furColor;
 
+    public Mammals(float weight, int age, int members) {
+        super(weight, age, members);
+    }
+
     @Override
     public void moveAround() {
         System.out.println("walking");

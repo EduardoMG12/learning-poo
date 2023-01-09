@@ -1,5 +1,10 @@
 public class Bird extends Animal{
     private String featherColor;
+
+    public Bird(float weight, int age, int members) {
+        super(weight, age, members);
+    }
+
     @Override
     public void moveAround() {
         System.out.println("flying");

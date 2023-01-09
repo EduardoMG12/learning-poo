@@ -1,13 +1,18 @@
 public class Fish extends Animal {
     private String scaleColor;
+
+    public Fish(float weight, int age, int members) {
+        super(weight, age, members);
+    }
+
     @Override
     public void moveAround() {
-
+        System.out.println("swimming");
     }
 
     @Override
     public void eating() {
-
+        System.out.println("eating things that fish eat");
     }
 
     @Override

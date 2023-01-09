@@ -2,6 +2,13 @@ public abstract class Animal {
     private float weight;
     private int age;
     private int members;
+
+    public Animal(float weight, int age, int members) {
+        this.weight = weight;
+        this.age = age;
+        this.members = members;
+    }
+
     public abstract void moveAround();
     public abstract void eating();
     public abstract void makeSound();

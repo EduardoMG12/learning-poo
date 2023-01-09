@@ -1,5 +1,10 @@
 public class Reptile extends Animal{
     private String scaleColor;
+
+    public Reptile(float weight, int age, int members) {
+        super(weight, age, members);
+    }
+
     @Override
     public void moveAround() {
         System.out.println("crawling");
