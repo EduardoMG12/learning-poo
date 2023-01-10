@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/projectBook/projectBook.iml" filepath="$PROJECT_DIR$/projectBook/projectBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-class/test-class.iml" filepath="$PROJECT_DIR$/test-class/test-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/ultra-emoji-combat/ultra-emoji-combat.iml" filepath="$PROJECT_DIR$/ultra-emoji-combat/ultra-emoji-combat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videoReproductor/videoReproductor.iml" filepath="$PROJECT_DIR$/videoReproductor/videoReproductor.iml" />
     </modules>
   </component>
 </project>
