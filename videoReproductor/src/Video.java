@@ -5,26 +5,24 @@ public class Video implements IVideo {
     private int views;
     private int likes;
     private boolean playing;
-
-    public Video(String title, int views, int likes) {
+    public Video(String title) {
         this.title = title;
-        setAvaliation(likes, views);
-        this.views = views;
-        this.likes = likes;
+        setAvaliation();
+        this.views = 0;
+        this.likes = 0;
         this.playing = false;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setAvaliation(int likes, int views) {
-        this.avaliation = averageAvaliation(likes, views);
+    public void setAvaliation() {
+        this.avaliation = averageAvaliation();
     }
 
-    public String averageAvaliation(int likes, int views){
+    public String averageAvaliation(){
         String averageString;
-        double average = likes / views;
+        double average = getLikes() / getViews();
         if (average < 1.0) averageString = "very good review";
         else if (average < 1.0) averageString = "good review";
         else if (average < 0.5) averageString =  "median";
@@ -33,6 +31,8 @@ public class Video implements IVideo {
 
         return averageString;
     }
+
+
     public void setViews(int views) {
         this.views = views;
     }
