@@ -77,4 +77,14 @@ public class Video implements IVideo {
         setLikes(getLikes() + 1);
     }
 
+    @Override
+    public String toString() {
+        return "Video{" +
+                "title='" + title + '\'' +
+                ", avaliation='" + avaliation + '\'' +
+                ", views=" + views +
+                ", likes=" + likes +
+                ", playing=" + playing +
+                '}';
+    }
 }
