@@ -1,8 +1,9 @@
 public class Reptile extends Animal{
     private String scaleColor;
 
-    public Reptile(float weight, int age, int members) {
+    public Reptile(float weight, int age, int members, String scaleColor) {
         super(weight, age, members);
+        setScaleColor(scaleColor);
     }
 
     @Override

@@ -1,8 +1,9 @@
 public class Bird extends Animal{
     private String featherColor;
 
-    public Bird(float weight, int age, int members) {
+    public Bird(float weight, int age, int members, String featherColor) {
         super(weight, age, members);
+        setFeatherColor(featherColor);
     }
 
     @Override
@@ -21,5 +22,13 @@ public class Bird extends Animal{
     }
     public void makingNest(){
         System.out.println("building nest");
+    }
+
+    public void setFeatherColor(String featherColor) {
+        this.featherColor = featherColor;
+    }
+
+    public String getFeatherColor() {
+        return featherColor;
     }
 }

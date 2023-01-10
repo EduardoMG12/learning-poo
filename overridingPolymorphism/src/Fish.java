@@ -1,8 +1,9 @@
 public class Fish extends Animal {
     private String scaleColor;
 
-    public Fish(float weight, int age, int members) {
+    public Fish(float weight, int age, int members, String scaleColor) {
         super(weight, age, members);
+        setScaleColor(scaleColor);
     }
 
     @Override
@@ -19,10 +20,9 @@ public class Fish extends Animal {
     public void makeSound() {
         System.out.println("fish don't make sounds");
     }
-public void releaseBubbles(){
-    System.out.println("releasing Bubbles");
-
-}
+    public void releaseBubbles(){
+        System.out.println("releasing Bubbles");
+    }
     public void setScaleColor(String scaleColor) {
         this.scaleColor = scaleColor;
     }
