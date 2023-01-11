@@ -2,7 +2,7 @@ public class Locust extends Person{
     private String login;
     private int watchingTotal;
     public void viewAMore(Video video){
-        video.setViews(video.getViews() + 1);
+        video.setViews(video.getViews() + 1.0);
     }
 
     public Locust(String name, int age, char sex, String login) {

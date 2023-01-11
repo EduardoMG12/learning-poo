@@ -2,14 +2,14 @@ public class Video implements IVideo {
 
     private String title;
     private String avaliation;
-    private int views;
-    private int likes;
+    private double views;
+    private double likes;
     private boolean playing;
     public Video(String title) {
         this.title = title;
         setAvaliation();
-        this.views = 0;
-        this.likes = 0;
+        this.views = 0.0;
+        this.likes = 0.0;
         this.playing = false;
     }
     public void setTitle(String title) {
@@ -33,11 +33,11 @@ public class Video implements IVideo {
     }
 
 
-    public void setViews(int views) {
+    public void setViews(double views) {
         this.views = views;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(double likes) {
         this.likes = likes;
     }
 
@@ -53,11 +53,11 @@ public class Video implements IVideo {
         return avaliation;
     }
 
-    public int getViews() {
+    public double getViews() {
         return views;
     }
 
-    public int getLikes() {
+    public double getLikes() {
         return likes;
     }
 
@@ -74,7 +74,7 @@ public class Video implements IVideo {
         else System.out.println("the video cannot be stopped");
     }
     public void like() {
-        setLikes(getLikes() + 1);
+        setLikes(getLikes() + 1.0);
     }
 
     @Override
