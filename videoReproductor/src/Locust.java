@@ -5,7 +5,8 @@ public class Locust extends Person{
         video.setViews(video.getViews() + 1);
     }
 
-    public Locust(String login) {
+    public Locust(String name, int age, char sex, String login) {
+        super(name, age, sex);
         this.login = login;
         this.watchingTotal = 0;
     }

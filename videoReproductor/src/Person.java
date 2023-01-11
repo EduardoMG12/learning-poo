@@ -1,8 +1,15 @@
-public class Person {
+public abstract class Person {
     protected String name;
     protected int age;
     protected char sex;
     protected double experience;
+
+    public Person(String name, int age, char sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.experience = 0;
+    }
 
     public void gainExperience(double exp){
         setExperience(getExperience() + exp);
