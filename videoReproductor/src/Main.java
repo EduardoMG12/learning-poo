@@ -11,8 +11,8 @@ public class Main {
         locust[2]=new Locust("Charles",20,'M',"sla123456@hotmail.com");
 
         var vizualization = new Visualization(locust[0],video[0]);
-        var vizualization = new Visualization(locust[1],video[0]);
-        var vizualization = new Visualization(locust[2],video[0]);
+        var vizualization0 = new Visualization(locust[1],video[0]);
+        var vizualization1 = new Visualization(locust[2],video[0]);
 
         System.out.println(vizualization.toString());
     }
