@@ -1,5 +1,5 @@
 # learningoOOP
-Este repositório contém os meus estudos e exercícios de programação orientada a objeto, utilizando linguagem X.
+Este repositório contém os meus estudos e exercícios de programação orientada a objeto, utilizando linguagem Java.
 
 ## Conteúdo
 Neste repositório você encontrará:
